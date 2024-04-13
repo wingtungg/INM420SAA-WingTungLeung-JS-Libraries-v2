@@ -1,0 +1,128 @@
+/* Styling for the mobile menu and show/hide section (JS) */
+
+/* mobile menu styling */
+#mobileMenu {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -100vh;
+    left: 0;
+    z-index: 999;
+}
+
+/* styling for the list inside mobile menu */
+#mobileMenu > ul {
+    width: 100%;
+    height: 100%;
+    background-color: #A78179;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    align-items: center;
+    justify-content:flex-start;
+}
+
+#mobileMenu > ul > li:first-child{
+    margin-top: 20vh;
+}
+
+#mobileMenu > ul > li {
+    cursor: pointer;
+    margin: 35px;
+    transition: 0.3s ease-in-out;
+}
+
+#mobileMenu > ul > li:hover {
+    text-decoration: underline;
+    color: burlywood;
+}
+
+/* when user click on the burger icon, the menu slide down */
+@keyframes slideDown {
+    from {
+        top: -100vh;
+    }
+    to {
+        top: 0;
+        margin-top: 90px;
+    }
+}
+
+.slideDown {
+    animation: slideDown 0.6s ease-in-out forwards;
+}
+
+
+/* when the menu is down already, user click on the burger icon will slide up the menu */
+@keyframes slideUp {
+    from {
+      top: 0;
+    }
+    to {
+      top: -100vh;
+    }
+}
+
+.slideUp {
+    animation: slideUp 0.6s ease-in-out forwards;
+}
+
+
+/* styling for sections (JS) */
+.hidden{
+    display: none;
+}
+
+.show {
+    display: block;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.showGallery {
+    display: grid;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* when user click another page on mobile menu, slide in that page */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}  
+
+.slidePageIn {
+    animation: slideIn 6s ease-in-out forwards;
+}
+
+@keyframes slideIn {
+    from {
+        left: -100vw;
+    }
+    to {
+        left:0;
+    }
+}
+
+/* when the user click on the menu list for another page, the previous slide will be hidden  */
+@keyframes slideGo {
+    from {
+        left: 0;
+    }
+    to {
+        left: -100vw;
+    }
+}
+
+.slideGo {
+    animation: slideGo 0.6s ease-in-out forwards;
+}
+
+

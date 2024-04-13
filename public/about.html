@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wing Tung Leung</title>
+
+        <!-- reset CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@3.0.0/reset.min.css" />
+        
+        <!-- import google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+        <!-- CSS stylesheet -->
+        <link rel="stylesheet" href="/assets/css/style.css" />
+        <link rel="stylesheet" type="text/css" href="/assets/css/menu.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.css" integrity="sha512-AIwt5sjXSKDo4t0KSQ/eAuy43kQMc1hYtIKLxaFrHd26nQFzMo1FJdBIickVyGXnhm2xB2OOYBqMBgu3dBU4KA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <header>
+        <!-- navigation section -->
+        <ul>
+            <li>
+                <image src="assets/images/logo.png" alt="Zeniff's logo" id="logo"></image>
+                <!-- menu for large screen -->
+                <nav id="menu">
+                    <ul>
+                        <!-- menu links to different pages -->
+                        <li class="menuLinks"><a href="index.html">Home</a></li>
+                        <li class="menuLinks"><a href="product.html">Products</a></li>
+                        <li class="menuLinks"><a href="about.html">About Us</a></li>
+                        <li class="menuLinks"><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </li>
+            <!-- burger icon -->
+            <li>
+                <image src="assets/images/white-burger.png" alt="burger menu icon" id="burger"></image>
+            </li>
+        </ul>
+
+        <!-- mobile menu --> 
+        <nav id="mobileMenu">
+        <ul>
+             <!-- menu links to different pages -->
+            <li class="menuLinks"><a href="index.html">Home</a></li>
+            <li class="menuLinks"><a href="product.html">Products</a></li>
+            <li class="menuLinks"><a href="about.html">About Us</a></li>
+            <li class="menuLinks"><a href="contact.html">Contact Us</a></li>
+        </ul>
+        </nav>
+    </header>
+    
+    <main id="main-page">
+        <section class="about-section">
+          <!-- About us content  -->
+          <div id="video-container">
+            <!-- background video -->
+            <video autoplay muted loop>
+              <source src="/assets/images/about-video.mp4" type="video/mp4">
+            </video>
+            <div id="video-overlay"></div>
+            <!-- overlay text -->
+            <div id="overlay">
+              <h1>Zenith - Elevate Your Home</h1>
+              <p>Founded in 1998, Zenith Furniture began as a humble family-owned workshop dedicated to crafting high-quality furniture. Over the years, our commitment to excellence and passion for design have propelled us to become a renowned name in the furniture industry.</p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+    <footer>
+        <!-- Footer content -->
+        <div class="footer-container">
+            <!-- back to top -->
+            <a href="#" id="back-to-top">Back To Top</a>
+            <!-- social media icons -->
+            <div class="social-media">
+                <a href="#" class="social-icon" target="_blank"><img src="/assets/images/fb-icon.png" alt="Facebook"></a>
+                <a href="#" class="social-icon" target="_blank"><img src="/assets/images/ig-icon.webp" alt="Instagram"></a>
+            </div>
+            <p>&copy; 2024 Zenith. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JS file -->
+    <script src="/assets/js/main.js"></script>
+    <!-- External script files for third-party libraries -->
+    <script src="/assets/js/bg-video.js"></script>
+
+</body>
+</html>

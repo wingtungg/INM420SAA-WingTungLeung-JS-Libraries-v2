@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wing Tung Leung</title>
+
+        <!-- reset CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@3.0.0/reset.min.css" />
+        
+        <!-- import google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+        <!-- CSS stylesheet -->
+        <link rel="stylesheet" href="/assets/css/style.css" />
+        <link rel="stylesheet" type="text/css" href="/assets/css/menu.css" />
+
+        <!-- external JS library css -->
+        <link href="/assets/css/lightbox.css" rel="stylesheet" />
+
+</head>
+<body>
+    <header>
+        <!-- navigation section -->
+        <ul>
+            <li>
+                <image src="assets/images/logo.png" alt="Zeniff's logo" id="logo"></image>
+                <!-- menu for large screen -->
+                <nav id="menu">
+                    <ul>
+                        <!-- menu links to different pages -->
+                        <li class="menuLinks"><a href="index.html">Home</a></li>
+                        <li class="menuLinks"><a href="product.html">Products</a></li>
+                        <li class="menuLinks"><a href="about.html">About Us</a></li>
+                        <li class="menuLinks"><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </li>
+            <!-- burger icon -->
+            <li>
+                <image src="assets/images/white-burger.png" alt="burger menu icon" id="burger"></image>
+            </li>
+        </ul>
+
+        <!-- mobile menu --> 
+        <nav id="mobileMenu">
+        <ul>
+             <!-- menu links to different pages -->
+            <li class="menuLinks"><a href="index.html">Home</a></li>
+            <li class="menuLinks"><a href="product.html">Products</a></li>
+            <li class="menuLinks"><a href="about.html">About Us</a></li>
+            <li class="menuLinks"><a href="contact.html">Contact Us</a></li>
+        </ul>
+        </nav>
+    </header>
+    
+    <main id="main-page">
+        <!-- product page -->
+        <section class="product-section">
+            <h1>Shop Our Products</h1>
+            <div id="product-container">
+                <!-- product card -->
+                <div class="product-card">
+                    <a href="/assets/images/cabinet.jpeg" data-lightbox="products" data-title="Cabinet">
+                        <img src="/assets/images/cabinet.jpeg"  alt="cabinet photo"/>
+                    </a>
+                    <h2>Cabinet</h2>
+                    <p>$129.99</p>
+                    <!-- Add to cart button -->
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+
+                <!-- product card -->
+                <div class="product-card">
+                    <a href="/assets/images/floor_lamp.jpeg" data-lightbox="products" data-title="Floor Lamp">
+                        <img src="/assets/images/floor_lamp.jpeg"  alt="floor lamp photo"/>
+                    </a>
+                    <h2>Floor Lamp</h2>
+                    <p>$49.99</p>
+                     <!-- Add to cart button -->
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+
+                <!-- product card -->
+                <div class="product-card">
+                    <a href="/assets/images/footstool.jpeg" data-lightbox="products" data-title="Foot Stool">
+                        <img src="/assets/images/footstool.jpeg"  alt="foot stool photo"/>
+                    </a>
+                    <h2>Foot Stool</h2>
+                    <p>$59.99</p>
+                     <!-- Add to cart button -->
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+
+                <!-- product card -->
+                <div class="product-card">
+                    <a href="/assets/images/mirror.jpeg" data-lightbox="products" data-title="Mirror">
+                        <img src="/assets/images/mirror.jpeg"  alt="mirror photo"/>
+                    </a>
+                    <h2>Mirror</h2>
+                    <p>$109.99</p>
+                     <!-- Add to cart button -->
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+
+                <!-- product card -->
+                <div class="product-card">
+                    <a href="/assets/images/small_mirror.jpeg" data-lightbox="products" data-title="Small Mirror">
+                        <img src="/assets/images/small_mirror.jpeg" alt="small mirror photo"/>
+                    </a>
+                    <h2>Small Mirror</h2>
+                    <p>$119.99</p>
+                     <!-- Add to cart button -->
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+
+                <!-- product card -->
+                <div class="product-card">
+                    <a href="/assets/images/sofa.jpeg" data-lightbox="products" data-title="Sofa">
+                        <img src="/assets/images/sofa.jpeg"  alt="sofa photo"/>
+                    </a>
+                    <h2>Sofa</h2>
+                    <p>$599.99</p>
+                     <!-- Add to cart button -->
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <!-- Footer content -->
+        <div class="footer-container">
+            <!-- back to top -->
+            <a href="#" id="back-to-top">Back To Top</a>
+            <!-- social media icons -->
+            <div class="social-media">
+                <a href="#" class="social-icon" target="_blank"><img src="/assets/images/fb-icon.png" alt="Facebook"></a>
+                <a href="#" class="social-icon" target="_blank"><img src="/assets/images/ig-icon.webp" alt="Instagram"></a>
+            </div>
+            <p>&copy; 2024 Zenith. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JS file -->
+    <script src="/assets/js/main.js"></script>
+    <!-- External script files for third-party libraries -->
+    <script src="/assets/js/lightbox-plus-jquery.js"></script>
+
+</body>
+</html>

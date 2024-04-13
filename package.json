@@ -1,0 +1,21 @@
+{
+  "name": "js-libraries",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "lite-server --baseDir=\"public\""
+  },
+  "author": "Wing Tung Leung",
+  "license": "private",
+  "private": true,
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "@glidejs/glide": "^3.6.0",
+    "granim": "^2.0.0",
+    "lightbox2": "^2.11.4"
+  },
+  "main": "index.js",
+  "keywords": [],
+  "description": ""
+}
